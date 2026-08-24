@@ -1,2 +1,12 @@
-# opencode-mobile-android
-OpenCode Mobile Android terminal app
+# OpenCode Mobile
+
+تطبيق أندرويد خفيف لتشغيل OpenCode من الهاتف ومتابعة الطرفية وإرسال الأوامر.
+
+## التشغيل
+
+1. ثبّت OpenCode كملف تنفيذي متوافق مع Android/Termux.
+2. انسخه إلى مجلد التطبيق الداخلي في:
+   `files/bin/opencode`
+3. افتح التطبيق واضغط **تشغيل**.
+
+يبحث التطبيق أولًا عن الملف المحلي، ثم عن `opencode` في `PATH`. لا يضمّن المشروع ملف OpenCode نفسه أو أي مفاتيح API. يمكن بناء المشروع من Android Studio أو عبر Gradle باستخدام Android SDK.
