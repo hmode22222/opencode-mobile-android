@@ -96,10 +96,10 @@ class MainActivity : Activity() {
         }
         command = EditText(this).apply {
             hint = "اكتب أمرًا أو رسالة..."
-            hintTextColor = muted
+            setHintTextColor(muted)
             setTextColor(Color.WHITE)
             textSize = 14f
-            singleLine = true
+            setSingleLine(true)
             imeOptions = EditorInfo.IME_ACTION_SEND
             setPadding(15, 0, 15, 0)
             background = rounded(border, 12)
