@@ -1,0 +1,19 @@
+run = "echo 'OpenCode Mobile هو مشروع Android. افتحه في Android Studio أو ابنِه عبر Gradle مع Android SDK.'"
+
+entrypoint = "app/src/main/AndroidManifest.xml"
+hidden=["*.jar", ".gradle"]
+
+[nix]
+channel = "stable-24_05"
+
+[packager]
+language = "java"
+
+[packager.features]
+packageSearch = true
+
+[languages.kotlin]
+pattern = "**/*.{kt,kts,java}"
+
+[languages.kotlin.languageServer]
+start = ["kotlin-language-server"]
